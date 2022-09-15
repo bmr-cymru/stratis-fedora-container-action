@@ -5,6 +5,10 @@ inputs:
   options:
     description: 'Options'
     required: false
+  runs:
+    description: 'Commands to run in container'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args: --privileged -v /dev:/dev

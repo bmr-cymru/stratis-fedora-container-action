@@ -1,6 +1,6 @@
 FROM fedora:36
 
-RUN apk add bash
+RUN dnf -y install bash
 
 COPY entrypoint.sh /entrypoint.sh
 
